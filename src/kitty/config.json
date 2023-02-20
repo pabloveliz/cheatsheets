@@ -1,0 +1,72 @@
+{
+    "columns": 3,
+    "shortcuts": [
+      { "level": 1, "levels": [
+        { "section": "Scrolling", "content": [
+          { "name":"up", "description":"Line up", "code": "&#8593;" },
+      { "name":"down", "description":"Line down", "code": "&#8595;" },
+      { "name":"page_up", "description":"Page up", "code": "PgUp" },
+      { "name":"page_down", "description":"Page down", "code": "PgDn" },
+      { "name":"home", "description":"Top", "code": "Home" },
+      { "name":"end", "description":"Bottom", "code": "End" },
+      { "name":"z", "description":"Previous shell prompt", "code": "z" },
+      { "name":"x", "description":"Next shell prompt", "code": "x" },
+      { "name":"h", "description":"Browse scrollback in less", "code": "h" },
+      { "name":"g", "description":"Browse last cmd output", "code": "g" }
+        ]},
+        { "section": "Tabs", "content": [
+          { "name":"t", "description":"New tab", "code": "t" },
+      { "name":"q", "description":"Close tab", "code": "q" },
+      { "name":"right", "description":"Next tab", "code": "&#8594;" },
+      { "name":"left", "description":"Previous tab", "code": "&#8592;" },
+      { "name":"l", "description":"Next layout", "code": "l" },
+      { "name":".", "description":"Move tab forward", "code": "." },
+      { "name":",", "description":"Move tab backward", "code": "," },
+      { "name":"i", "description":"Set tab title", "code": "i" }
+        ]},
+        { "section": "Windows", "content": [
+          { "name":"enter", "description":"New window", "code": "&#10550;" },
+      { "name":"n", "description":"New OS window", "code": "n" },
+      { "name":"w", "description":"Close window", "code": "w" },
+      { "name":"]", "description":"Next window", "code": "]" },
+      { "name":"[", "description":"Previous window", "code": "[" },
+      { "name":"f", "description":"Move window forward", "code": "f" },
+      { "name":"b", "description":"Move window backward", "code": "b" },
+      { "name":"backtick", "description":"Move window to top", "code": "`" },
+      { "name":"f7", "description":"Visually focus window", "code": "f7" },
+      { "name":"f8", "description":"Visually swap window", "code": "f8" },
+      { "name":"1..0", "description":"Focus specific window", "code": "1..0" }
+        ]}
+      ]},
+      { "level": 2, "levels": [
+        { "section": "Other", "content": [
+      { "name":"c", "description":"Copy to clipboard", "code": "c" },
+      { "name":"v", "description":"Paste from clipboard", "code": "v" },
+      { "name":"s", "description":"Paste from selection", "code": "s" },
+      { "name":"o", "description":"Pass selection to program", "code": "o" },
+      { "name":"=", "description":"Increase font size", "code": "=" },
+      { "name":"-", "description":"Decrease font size", "code": "-" },
+      { "name":"backspace", "description":"Restore font size", "code": "&#129044;" }
+        ]},
+        { "section": "&nbsp;", "content": [
+          { "name":"f1", "description":"Show this help", "code": "f1" },
+      { "name":"f11", "description":"Toggle fullscreen", "code": "f11" },
+      { "name":"f10", "description":"Toggle maximized", "code": "f10" },
+      { "name":"u", "description":"Input Unicode character", "code": "u" },
+      { "name":"e", "description":"Open URL in web browser", "code": "e" },
+      { "name":"delete", "description":"Reset the terminal", "code": "Del" },
+      { "name":"esc", "description":"Open a kitty shell", "code": "Esc" }
+        ]},
+        { "section": "&nbsp;", "content": [
+      { "name":"f2", "description":"Edit kitty.conf", "code": "f2" },
+      { "name":"f5", "description":"Reload kitty.conf", "code": "f5" },
+      { "name":"f6", "description":"Debug kitty.conf", "code": "f6" },
+      { "name":"a,m", "description":"Increase backgr. opacity", "code": "a,m" },
+      { "name":"a,l", "description":"Decrease backgr. opacity", "code": "a,l" },
+      { "name":"a,1", "description":"Full backgr. opacity", "code": "a,1" },
+      { "name":"a,d", "description":"Reset backgr. opacity", "code": "a,d" }
+        ]}
+      ]}
+    ]
+}
+  

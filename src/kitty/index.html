@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Kitty ShortCuts</title>
+</head>
+<body>
+  <div class="px-2 py-4 sm:px-8">
+    <p class="text-2xl">
+      <img src="https://sw.kovidgoyal.net/kitty/_static/kitty.svg" width="64" align="left">
+      Kitty Access
+    </p>
+    <p class="text-gray-500 dark:text-gray-400">
+      <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Ctrl</kbd>
+      +
+      <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Shift</kbd>
+    </p>
+  </div>
+{% for level in shortcuts %}
+<div class="columns-3">
+  {% for item in level.levels %}
+  <div class="px-2 py-4 sm:px-2 break-after-column">
+    <table class="table-auto w-full border-collapse border border-slate-400 dark:border-slate-500 bg-white dark:bg-slate-800 text-sm shadow-sm">
+      <thead class="bg-slate-50 dark:bg-slate-700">
+        <tr>
+          <th colspan="2" class="border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left">
+            {{ item.section }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for key in item.content %}
+        <tr>
+          <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+              {{ key.code }}
+            </kbd>
+          </td>
+          <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+            {{ key.description }}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+
+</body>
+</html>
